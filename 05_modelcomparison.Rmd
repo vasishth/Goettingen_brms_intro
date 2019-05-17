@@ -1,11 +1,11 @@
 ---
 title: "05 Model comparison and hypothesis testing"
 author: "Shravan Vasishth"
-date: "25-29 March 2019"
+date: "28 June 2019"
 output:
   beamer_presentation:
-    theme: "CambridgeUS"
-    colortheme: "dolphin"
+    theme: "Boadilla"
+    colortheme: "dove"
     fonttheme: "structurebold"
 header-includes:
    - \usepackage{esint}
