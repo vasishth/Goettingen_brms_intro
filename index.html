@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Shravan Vasishth's Intro to brms for linear mixed models</title>
+  <meta name="description" content="">
+  <meta name="author" content="Shravan Vasishth">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/lorikeet.jpg">
+
+</head>
+<body>
+
+
+<section>
+  <div class="container">
+
+
+<div class="column">
+
+<p>
+  <h3>Using brms to fit linear mixed models</h3>
+
+<br>
+
+  <h4>Instructor</h4>
+
+  <a href="http://www.ling.uni-potsdam.de/~vasishth/">Shravan Vasishth</a><br><br>
+
+
+  <h4>Dates and location</h4>
+
+ Taught at Goettingen, 27-28 June 2019.<br>
+
+<br><br>
+
+<h4>Overview</h4>
+
+ 
+<br><br>
+ 
+<h4>Prerequisites</h4>
+
+We assume familiarity with R and lmer. 
+
+<br><br>
+
+<h4>Please install the following software before coming to the course</h4>
+
+We will be using the software <a href="http://cran.r-project.org/">R</a>,
+and <a href="https://www.rstudio.com/">RStudio</a>,
+ so make sure you install these on your computer.  
+You should also install the R package <a href="https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started">rstan</a>; the R package <a href="https://github.com/paul-buerkner/brms">brms</a>.
+
+
+<br><br>
+
+<h4>Outcomes</h4>
+
+After completing this workshop, participant will have become familiar with some of the nuts and bolts details of Bayesian linear mixed models using brms. They will know how to calibrate their models using prior and posterior predictive checks; they will be able to establish true and false discovery rates to validate discovery claims, and to carry out model comparison using Bayes factors. 
+
+<br><br>
+
+<h4>Course materials</h4>
+
+These are part of a <a href="https://vasishth.github.io/IntroductionBayes/">longer course</a> on Bayesian data analysis. Some slides may seem out of context, but I will fill in the details just in time.
+
+<strong>slides:</strong> 
+
+<ol>
+<li><a href="04_hlm.pdf">04 Hierarchical Linear Models</a>
+<ol>
+ <li><a href="code_snippets/gen_fake_lnorm.R">fake data generation function</a></li> 
+<li><a href="exercises/04_01_RepeatedMeasures_FDR_TDR.pdf">04.01 Exercises</a>,
+
+<a href="exercises/04_02_RepeatedMeasures_Unaggregated.pdf">04.02 Exercises</a>
+</li>  
+</ol>  
+<li><a href="05_modelcomparison.pdf">05 Model Comparison using Bayes Factors</a></li>
+<ol>
+<li><a href="code_snippets/05_modelcomparison.R">05 code from slides</a></li>
+</ol>  
+
+<ol>
+<li><a href="exercises/05_01_BayesFactors.pdf">05.01 Exercises</a>,
+<a href="exercises/05_02_MiscellaneousTopics.pdf">05.02 Exercises</a></li>  
+</ol>  
+</ol>  
+
+<strong>case studies:</strong> 
+
+<a href="case_studies.zip">Three case studies (zip archive): meta-analysis, measurement error models, and example of pre-registration</a>.  
+
+<br><br>
+
+
+
+<h4>Additional readings</h4>
+
+<strong>R programming</strong>
+
+<ol>
+    <li><a href="http://ilustat.com/shared/Getting-Started-in-R.pdf">Getting started with R</a></li>
+  <li><a href="https://r4ds.had.co.nz/">R for data science</a></li>
+  <li><a href="https://csgillespie.github.io/efficientR/">Efficient R programming</a>.</li>
+</ol>  
+
+<strong>Books</strong>
+
+<ol>
+  <li>
+ <a href="https://www.amazon.co.uk/Students-Guide-Bayesian-Statistics/dp/1473916364">A Student's Guide to Bayesian Statistics, by Ben Lambert</a>: A good, non-technical introduction to Stan and Bayesian modeling.</li>
+  <li><a href="https://xcelab.net/rm/statistical-rethinking/">Statistical Rethinking, by Richard McElreath</a>: A classic introduction.</li>
+  <li><a href="http://www.indiana.edu/~kruschke/DoingBayesianDataAnalysis/">Doing Bayesian Data Analysis, Second Edition:
+A Tutorial with R, JAGS, and Stan, By John Kruschke</a>: A good introduction specifically for psychologists.</li>
+</ol>
+
+
+<strong>Tutorial articles</strong>
+
+<ol>
+ <li>
+ <a href="https://econpapers.repec.org/article/jssjstsof/v_3a080_3ai01.htm">brms tutorial by the author of the package, Paul Buerkner.</a> 
+<li><a href="https://psyarxiv.com/x8swp/">Ordinal regression models in psychological research: A tutorial, by Buerkner and Vuorre.</a></li>
+<li>
+ <a href="https://arxiv.org/abs/1807.10451">Contrast coding tutorial, by Schad, Hohenstein, Vasishth, Kliegl. Under review with the Journal of Memory and Language</a>.
+</li> 
+  <li>
+ <a href="https://osf.io/b2vx9/">Bayesian workflow tutorial, by Schad, Betancourt, Vasishth</a>.
+</li>
+  <li>
+ <a href="http://www.tqmp.org/RegularArticles/vol12-3/p175/p175.pdf">Linear mixed models tutorial, Sorensen, Hohenstein, Vasishth.</a>
+</li>
+  <li>
+ <a href="https://osf.io/g4zpv/">brms tutorial for phonetics/phonology, Vasishth, Nicenboim, Beckman, Li, Kong.</a>
+</li>
+</ol>
+
+<strong>Some example articles from our lab that use Bayesian methods</strong>
+
+
+
+<ol>
+<li>
+ <a href="https://osf.io/g5ndw/">Example random-effects meta-analysis.</a>
+</li> 
+  <li>
+ <a href="https://mc-stan.org/events/stancon2017-notebooks/stancon2017-nicenboim-vasishth-retrieval-models.html">Example of finite mixture models using Stan.</a>
+</li>
+<li><a href="https://osf.io/eyphj/">Replication attempt of a published study.</a></li>
+<li><a href="https://osf.io/mmr7s/">Bayesian analysis of relatively large-sample psycholinguistic experiment.</a></li>
+<li><a href="https://avehtari.github.io/RAOS-Examples/">Examples of regression analyses by Vehtari and colleagues</a></li>
+</ol>
+
+</p>
+</div>
+</div>
+
+</section>
+</body>
+</html>
