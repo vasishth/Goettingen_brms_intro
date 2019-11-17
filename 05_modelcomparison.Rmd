@@ -260,7 +260,7 @@ w<-rep(1/10,10)
 
 prob<-rep(NA,length(w))
 for(i in 1:length(theta)){
-prob[i]<-(1/w[i])*choose(10,9)*theta[i]^9*(1-theta[i]^1)
+prob[i]<-(w[i])*choose(10,9)*theta[i]^9*(1-theta[i]^1)
 }
 ## Likelihood for model M2 with 
 ## new prior on theta:
@@ -277,7 +277,7 @@ Now the Bayes factor for M1 compared to M2 is:
 0.0097/sum(prob)
 ```
 
-Now, model M2 is decisively more likely compared to model M1:
+Now, model M2 is more likely compared to model M1:
 
 ```{r echo=TRUE}
 1/(0.0097/sum(prob))
